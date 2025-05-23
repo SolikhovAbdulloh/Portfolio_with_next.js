@@ -26,51 +26,51 @@ export function Projects() {
             title="Animation Website"
             description="A website built with Next.js and Tailwind CSS about animation"
             image="/heros_page1.png"
-            tags={["Next.js", "React", "Tailwind CSS", "Stripe"]}
+            tags={["Next.js", "React", "Tailwind CSS"]}
             demoLink="https://profoilio-by-ilhom.vercel.app/"
             repoLink="https://github.com/dashboard"
           />
 
           <ProjectCard
             title="Dashboard UI"
-            description="An admin dashboard with dark mode, data visualization, and responsive design, built using React and Chart.js."
-            image="/placeholder.svg?height=300&width=500"
-            tags={["React", "Chart.js", "Styled Components"]}
-            demoLink="#"
-            repoLink="#"
+            description="An admin dashboard"
+            image="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b7e753135191139.61e39f6d15e5e.png"
+            tags={["Next.js"]}
+            demoLink="https://v0-admin-panel-creation-three.vercel.app/"
+            repoLink="https://github.com/dashboard"
           />
           <ProjectCard
             title="Social Media App"
             description="A social platform with real-time messaging, post creation, and user authentication using Firebase."
-            image="/placeholder.svg?height=300&width=500"
+            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Rc59GcRHkiQ1Lec09JRF2TCgxiEpMMWW7g&s"
             tags={["React", "Firebase", "Tailwind CSS"]}
-            demoLink="https://green-shop-project-ts-npyh.vercel.app/Home#"
+            demoLink="https://green-shop-project-ts-npyh.vercel.app/"
             repoLink="https://github.com/dashboard"
           />
           <ProjectCard
-            title="Portfolio Website"
-            description="A creative portfolio website with smooth animations and 3D elements using Three.js."
-            image="/placeholder.svg?height=300&width=500"
-            tags={["Next.js", "Three.js", "GSAP"]}
-            demoLink="#"
-            repoLink="#"
+            title="Portfolio About me"
+            description="A creative portfolio website about me.I just create"
+            image="/futsal.jpg"
+            tags={["Next.js"]}
+            demoLink="https://portfolio-with-next-js-rho.vercel.app/"
+            repoLink="https://github.com/dashboard"
           />
           <ProjectCard
             title="Weather App"
-            description="A weather application with location detection, 5-day forecast, and beautiful UI transitions."
-            image="/placeholder.svg?height=300&width=500"
-            tags={["React", "OpenWeather API", "Framer Motion"]}
+            description="A weather website about 60 country"
+            image="https://img.freepik.com/free-vector/weather-icons-collection_1167-124.jpg?semt=ais_hybrid&w=740"
+            tags={["React", "leaflet"]}
             demoLink="#"
-            repoLink="#"
+            repoLink="https://github.com/SolikhovAbdulloh/Weather_APi_Map"
           />
-          <ProjectCard
+          {/* <ProjectCard
             title="Task Management Tool"
             description="A Kanban-style task management application with drag-and-drop functionality and user authentication."
             image="/placeholder.svg?height=300&width=500"
             tags={["React", "Redux", "React DnD"]}
             demoLink="#"
             repoLink="#"
-          />
+          /> */}
         </div>
       </div>
     </section>

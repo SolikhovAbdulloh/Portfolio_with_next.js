@@ -78,7 +78,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="font-medium">Location</h3>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground">Tashkent, Uzbekistan</p>
               </div>
             </div>
           </CardContent>
