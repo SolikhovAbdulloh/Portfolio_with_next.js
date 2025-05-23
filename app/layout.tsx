@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "SolikhovFrontEnd",
   description: "Solikhov",
   generator: "v0.dev",
+  icons: {
+    icon: "/futsal.jpg",
+  },
 };
 
 export default function RootLayout({
