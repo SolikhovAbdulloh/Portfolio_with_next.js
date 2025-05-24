@@ -49,8 +49,8 @@ export function Hero() {
             </Link>
           </div>
         </div>
-        <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/40 rounded-lg flex items-center justify-center">
+        <div className="relative h-[300px] md:h-[400px] overflow-hidden">
+          <div className="absolute inset-0 from-primary/20 to-primary/40  flex items-center justify-center">
             <img
               src="/futsal.jpg"
               alt="Developer portrait"
