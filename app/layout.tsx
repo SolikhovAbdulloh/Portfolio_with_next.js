@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   icons: {
     icon: "/futsal.jpg",
   },
+  openGraph: {
+    title: "SolikhovFrontEnd",
+    description: "Solikhov",
+    url: "https://portfolio-with-next-js-rho.vercel.app/",
+    siteName: "SolikhovFrontEnd",
+    images: [
+      {
+        url: "/futsal.jpg",
+        width: 800,
+        height: 600,
+        alt: "Solikhov image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
