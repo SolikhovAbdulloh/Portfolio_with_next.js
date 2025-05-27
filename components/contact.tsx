@@ -8,30 +8,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ChevronsDown, Mail, MapPin, Phone } from "lucide-react";
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically handle the form submission
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    // Show success message
-    alert("Message sent! I'll get back to you soon.");
+  const handleClick = () => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -86,7 +70,11 @@ export function Contact() {
 
         <Card className="lg:col-span-2">
           <CardContent className="pt-6">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form
+              action="https://formspree.io/f/mrbqwwrz"
+              method="POST"
+              className="space-y-4"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
@@ -96,8 +84,6 @@ export function Contact() {
                     id="name"
                     name="name"
                     placeholder="Your name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -110,8 +96,6 @@ export function Contact() {
                     name="email"
                     type="email"
                     placeholder="Your email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -125,8 +109,6 @@ export function Contact() {
                   name="message"
                   placeholder="Your message"
                   rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                 />
               </div>
@@ -137,6 +119,13 @@ export function Contact() {
           </CardContent>
         </Card>
       </div>
+      <button
+        onClick={handleClick}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce p-3 rounded-full bg-primary text-white shadow-md hover:bg-primary/80 transition"
+        aria-label="Scroll to contact section"
+      >
+        <ChevronsDown className="h-6 w-6" />
+      </button>
     </section>
   );
 }

@@ -38,13 +38,6 @@ export function Footer() {
                 <Send className="h-5 w-5" />
                 <span className="sr-only">Telegram</span>
               </Link>
-              <Link
-                href="mailto:hello@example.com"
-                className="hover:text-primary transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Link>
             </div>
             <p className="text-sm text-muted-foreground">
               © {currentYear} SolikhovAbdulloh.
