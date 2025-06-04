@@ -36,6 +36,7 @@ export function Skills() {
             "JavaScript",
             "TypeScript",
             "React",
+            "React-native",
             "Next.js",
             "Redux",
             "Zustand",
@@ -50,6 +51,7 @@ export function Skills() {
             "Tailwind CSS",
             "Figma",
             "Ant",
+            "Fromspree",
             "MUI",
             "Sass",
           ]}
@@ -58,7 +60,7 @@ export function Skills() {
         <SkillCard
           icon={<Layers />}
           title="Frontend Frameworks"
-          skills={["React", "Next.js"]}
+          skills={["React", "Next.js", "React-native"]}
         />
 
         <SkillCard

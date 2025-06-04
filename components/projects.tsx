@@ -28,7 +28,7 @@ export function Projects() {
             image="/heros_page1.png"
             tags={["Next.js", "React", "Tailwind CSS"]}
             demoLink="https://profoilio-by-ilhom.vercel.app/"
-            repoLink="https://github.com/dashboard"
+            repoLink="https://github.com/SolikhovAbdulloh/Profoilio_by_Ilhom"
           />
 
           <ProjectCard
@@ -45,13 +45,13 @@ export function Projects() {
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Rc59GcRHkiQ1Lec09JRF2TCgxiEpMMWW7g&s"
             tags={["React", "Firebase", "Tailwind CSS"]}
             demoLink="https://green-shop-project-ts-npyh.vercel.app/"
-            repoLink="https://github.com/dashboard"
+            repoLink="https://github.com/SolikhovAbdulloh/GreenShop_project_Ts"
           />
           <ProjectCard
             title="Portfolio About me"
             description="A creative portfolio website about me.I just create"
             image="/futsal.jpg"
-            tags={["Next.js"]}
+            tags={["Next.js", "Github", "Js", "Formspree"]}
             demoLink="https://portfolio-with-next-js-rho.vercel.app/"
             repoLink="https://github.com/dashboard"
           />
@@ -59,18 +59,25 @@ export function Projects() {
             title="Weather App"
             description="A weather website about 60 country"
             image="https://img.freepik.com/free-vector/weather-icons-collection_1167-124.jpg?semt=ais_hybrid&w=740"
-            tags={["React", "leaflet"]}
-            demoLink="#"
+            tags={["React", "leaflet", "Js", "Map"]}
+            demoLink="https://github.com/SolikhovAbdulloh/Weather_APi_Map"
             repoLink="https://github.com/SolikhovAbdulloh/Weather_APi_Map"
           />
-          {/* <ProjectCard
-            title="Task Management Tool"
-            description="A Kanban-style task management application with drag-and-drop functionality and user authentication."
-            image="/placeholder.svg?height=300&width=500"
-            tags={["React", "Redux", "React DnD"]}
-            demoLink="#"
-            repoLink="#"
-          /> */}
+          <ProjectCard
+            title="MovieSol application"
+            description="Application about only movies films and get information films"
+            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY2xf0mo7HnOLfUUemvgk4NsqzGnYa8gk-rg&s"
+            tags={[
+              "React",
+              "React-native",
+              "Expo",
+              "nativewind",
+              "Typescript",
+              "TMBD for database",
+            ]}
+            demoLink="https://github.com/SolikhovAbdulloh/Native-project-movies"
+            repoLink="https://github.com/SolikhovAbdulloh/Native-project-movies"
+          />
         </div>
       </div>
     </section>
@@ -93,13 +100,14 @@ function ProjectCard({
   repoLink: string;
 }) {
   return (
-    <Card className="overflow-hidden flex flex-col h-full">
+    <Card className="overflow-hidden flex flex-col h-full cursor-pointer">
       <div className="relative h-48 overflow-hidden">
         <img
           src={image || "/placeholder.svg"}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="w-full h-full  object-cover bg-transparent  transition-transform duration-300 hover:scale-105"
         />
+        {/* width="96" height="96" */}
       </div>
       <CardContent className="pt-6 flex-grow">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
