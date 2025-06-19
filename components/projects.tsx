@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -71,12 +72,21 @@ export function Projects() {
               "React",
               "React-native",
               "Expo",
+
               "nativewind",
               "Typescript",
-              "TMBD for database",
+              "TMBD",
             ]}
             demoLink="https://github.com/SolikhovAbdulloh/Native-project-movies"
             repoLink="https://github.com/SolikhovAbdulloh/Native-project-movies"
+          />
+          <ProjectCard
+            title="Kinoteatr"
+            description="You get on information about films and actors seen worked in the films"
+            image="/logo.png"
+            tags={["React-native", "nativewind", "Js", "TMDB"]}
+            demoLink="https://github.com/SolikhovAbdulloh/native_movie_project"
+            repoLink="https://github.com/SolikhovAbdulloh/native_movie_project"
           />
         </div>
       </div>
@@ -102,12 +112,12 @@ function ProjectCard({
   return (
     <Card className="overflow-hidden flex flex-col h-full cursor-pointer">
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
           src={image || "/placeholder.svg"}
           alt={title}
-          className="w-full h-full  object-cover bg-transparent  transition-transform duration-300 hover:scale-105"
+          fill
+          className="object-cover bg-transparent  transition-transform duration-300 hover:scale-105"
         />
-        {/* width="96" height="96" */}
       </div>
       <CardContent className="pt-6 flex-grow">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
